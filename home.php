@@ -109,7 +109,9 @@
         <div class="row">
         <?php 
         query_posts(array('post__not_in' => $ids));
-        while (have_posts()): the_post(); ?>
+        while (have_posts()): the_post();
+        $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+        ?>
             <div class="col-md-4">
                 <div class="bee-log-thumbnail" style="background-image: url('<?php echo $url[0]; ?>');"></div>
                 <div class="post-content-wrapper">
