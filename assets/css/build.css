@@ -310,94 +310,94 @@ img {
     transform: translate(0, 0); } }
 
 .beetasvg-0 {
-  -webkit-animation-delay: 1s !important;
-  animation-delay: 1s !important;
-  -webkit-animation: float 36.5s infinite;
-  animation: float 36.5s infinite; }
+  -webkit-animation-delay: 0.8s !important;
+  animation-delay: 0.8s !important;
+  -webkit-animation: float 31.5s infinite;
+  animation: float 31.5s infinite; }
 
 .beetasvg-1 {
-  -webkit-animation-delay: 0.4s !important;
-  animation-delay: 0.4s !important;
-  -webkit-animation: float 30.5s infinite;
-  animation: float 30.5s infinite; }
-
-.beetasvg-2 {
   -webkit-animation-delay: 0.2s !important;
   animation-delay: 0.2s !important;
+  -webkit-animation: float 35s infinite;
+  animation: float 35s infinite; }
+
+.beetasvg-2 {
+  -webkit-animation-delay: 1.4s !important;
+  animation-delay: 1.4s !important;
+  -webkit-animation: float 32s infinite;
+  animation: float 32s infinite; }
+
+.beetasvg-3 {
+  -webkit-animation-delay: 1.2s !important;
+  animation-delay: 1.2s !important;
+  -webkit-animation: float 32s infinite;
+  animation: float 32s infinite; }
+
+.beetasvg-4 {
+  -webkit-animation-delay: 0.6s !important;
+  animation-delay: 0.6s !important;
   -webkit-animation: float 37.5s infinite;
   animation: float 37.5s infinite; }
 
-.beetasvg-3 {
-  -webkit-animation-delay: 1.4s !important;
-  animation-delay: 1.4s !important;
-  -webkit-animation: float 32.5s infinite;
-  animation: float 32.5s infinite; }
-
-.beetasvg-4 {
-  -webkit-animation-delay: 1s !important;
-  animation-delay: 1s !important;
-  -webkit-animation: float 33.5s infinite;
-  animation: float 33.5s infinite; }
-
 .beetasvg-5 {
-  -webkit-animation-delay: 1s !important;
-  animation-delay: 1s !important;
-  -webkit-animation: float 36s infinite;
-  animation: float 36s infinite; }
+  -webkit-animation-delay: 0.2s !important;
+  animation-delay: 0.2s !important;
+  -webkit-animation: float 33s infinite;
+  animation: float 33s infinite; }
 
 .beetasvg-6 {
   -webkit-animation-delay: 0.4s !important;
   animation-delay: 0.4s !important;
-  -webkit-animation: float 34.5s infinite;
-  animation: float 34.5s infinite; }
+  -webkit-animation: float 32.5s infinite;
+  animation: float 32.5s infinite; }
 
 .beetasvg-7 {
-  -webkit-animation-delay: 1s !important;
-  animation-delay: 1s !important;
-  -webkit-animation: float 35s infinite;
-  animation: float 35s infinite; }
+  -webkit-animation-delay: 0.6s !important;
+  animation-delay: 0.6s !important;
+  -webkit-animation: float 37s infinite;
+  animation: float 37s infinite; }
 
 .beetasvg-8 {
-  -webkit-animation-delay: 1.4s !important;
-  animation-delay: 1.4s !important;
-  -webkit-animation: float 31.5s infinite;
-  animation: float 31.5s infinite; }
-
-.beetasvg-9 {
-  -webkit-animation-delay: 0.2s !important;
-  animation-delay: 0.2s !important;
-  -webkit-animation: float 31s infinite;
-  animation: float 31s infinite; }
-
-.beetasvg-10 {
-  -webkit-animation-delay: 0.2s !important;
-  animation-delay: 0.2s !important;
-  -webkit-animation: float 35s infinite;
-  animation: float 35s infinite; }
-
-.beetasvg-11 {
-  -webkit-animation-delay: 1s !important;
-  animation-delay: 1s !important;
+  -webkit-animation-delay: 0.4s !important;
+  animation-delay: 0.4s !important;
   -webkit-animation: float 36.5s infinite;
   animation: float 36.5s infinite; }
 
-.beetasvg-12 {
+.beetasvg-9 {
+  -webkit-animation-delay: 1s !important;
+  animation-delay: 1s !important;
+  -webkit-animation: float 32.5s infinite;
+  animation: float 32.5s infinite; }
+
+.beetasvg-10 {
   -webkit-animation-delay: 1.4s !important;
   animation-delay: 1.4s !important;
-  -webkit-animation: float 37.5s infinite;
-  animation: float 37.5s infinite; }
+  -webkit-animation: float 33s infinite;
+  animation: float 33s infinite; }
+
+.beetasvg-11 {
+  -webkit-animation-delay: 0.6s !important;
+  animation-delay: 0.6s !important;
+  -webkit-animation: float 32.5s infinite;
+  animation: float 32.5s infinite; }
+
+.beetasvg-12 {
+  -webkit-animation-delay: 0.8s !important;
+  animation-delay: 0.8s !important;
+  -webkit-animation: float 34s infinite;
+  animation: float 34s infinite; }
 
 .beetasvg-13 {
-  -webkit-animation-delay: 0.4s !important;
-  animation-delay: 0.4s !important;
+  -webkit-animation-delay: 0.2s !important;
+  animation-delay: 0.2s !important;
   -webkit-animation: float 33.5s infinite;
   animation: float 33.5s infinite; }
 
 .beetasvg-14 {
   -webkit-animation-delay: 0.4s !important;
   animation-delay: 0.4s !important;
-  -webkit-animation: float 32s infinite;
-  animation: float 32s infinite; }
+  -webkit-animation: float 31.5s infinite;
+  animation: float 31.5s infinite; }
 
 @-webkit-keyframes shake {
   90%,
@@ -2174,7 +2174,7 @@ header.nav-header {
     padding-bottom: 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: top left; }
 
 .rolling-posts {
   position: relative; }
