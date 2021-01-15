@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90.51" height="90.51" viewBox="0 0 90.51 90.51">
+  <g id="_3_build_icon" data-name="3_build_icon" transform="translate(-1174.745 -1172.308)">
+    <g id="Rectangle_2557" data-name="Rectangle 2557" transform="translate(1220 1172.308) rotate(45)" fill="none" stroke="#f8c200" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+      <rect width="64" height="64" stroke="none"/>
+      <rect x="2" y="2" width="60" height="60" fill="none"/>
+    </g>
+    <path id="Subtraction_15" data-name="Subtraction 15" d="M43.177,65.369h0L35.9,58.094h14.55l-7.275,7.275Zm14.55-14.55h-29.1l-7.25-7.25h43.6l-7.25,7.25ZM72.252,36.294H14.1l-3.61-3.61,3.665-3.665H72.2l3.665,3.665-3.61,3.61Zm-7.331-14.55H21.433l7.275-7.275H57.646l7.275,7.275ZM50.371,7.194H35.983L43.177,0l7.194,7.194Z" transform="translate(1177.071 1184.999)" fill="#f8c200"/>
+  </g>
+</svg>

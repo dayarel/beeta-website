@@ -1,0 +1,19 @@
+#cookie-law-info-bar {
+  span {
+    color: $dark;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  .cli_settings_button {
+    background-color: $yellow;
+    color: $dark !important;
+    display: inline-block;
+    padding: 3px 16px 3px;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+a.cli-nav-link {
+  color: $dark !important;
+}

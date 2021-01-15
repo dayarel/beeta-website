@@ -1,0 +1,180 @@
+#careers-header {
+  height: 104px;
+  background-color: $yellow;
+  padding: 0;
+  a {
+    display: block;
+    color: $dark;
+    text-align: center;
+    font-size: 32px;
+    line-height: 104px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    @media (min-width: 992px) {
+      font-size: 40px;
+    }
+  }
+}
+
+#careers-main {
+  padding-top: 0;
+  .careers-section {
+    margin-top: 45px;
+    @media (min-width: 768px) {
+      margin-top: 95px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 135px;
+    }
+    .career-single {
+      .career-icon {
+        width: 45px;
+        height: auto;
+      }
+      h1 {
+        font-size: 31px;
+        line-height: 47px;
+        margin-top: 25px;
+      }
+      h2,
+      p {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      h2 {
+        font-weight: 500;
+        margin-top: 15px;
+      }
+      p {
+        margin-top: 35px;
+      }
+      .career-image-wrapper {
+        position: relative;
+        margin-top: 45px;
+        position: relative;
+        @media (min-width: 768px) {
+          margin-top: 35px;
+        }
+        .career-image-shadow {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 7.5px;
+          left: 10px;
+          z-index: -1;
+          animation: smallfloat 30s ease-in-out infinite;
+          background-color: $turquoise;
+        }
+      }
+      &.career-reverse {
+        .row {
+          display: flex;
+          @media (min-width: 768px) {
+            flex-direction: row-reverse;
+          }
+        }
+      }
+    }
+  }
+}
+
+#roles-section {
+  h1 {
+    font-size: 31px;
+    line-height: 47px;
+    @media (min-width: 768px) {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+  .role-container {
+    margin-top: 10px;
+    @media (min-width: 768px) {
+      margin-top: 25px;
+    }
+  }
+  .job-container {
+    margin-top: 45px;
+    height: 225px;
+    position: relative;
+    @media (min-width: 768px) {
+      height: 300px;
+      margin-top: 30px;
+    }
+    &:hover {
+      .job-background {
+        transform: scale(1.2);
+      }
+    }
+    .job-bg-wrapper {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .job-background {
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%) brightness(7%);
+        background-size: cover;
+        background-position: top center;
+        transition: all 0.55s ease-in-out;
+      }
+    }
+
+    .job-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      a {
+        color: white;
+        transition: color 0.35s ease-in-out;
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 45px;
+        @media (min-width: 768px) {
+          font-size: 26px;
+          line-height: 32px;
+        }
+        &:hover {
+          color: $yellow;
+          text-decoration: none;
+        }
+        span {
+          margin-top: 8px;
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 300;
+          @media (min-width: 768px) {
+            font-size: 15px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+    .job-shadow {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 7.5px;
+      left: 10px;
+      z-index: -1;
+      animation: smallfloat 30s ease-in-out infinite;
+      background-color: $turquoise;
+      &.shadow-2 {
+        animation-delay: 2.5s;
+      }
+      &.shadow-3 {
+        animation-delay: 4.5s;
+      }
+    }
+  }
+}

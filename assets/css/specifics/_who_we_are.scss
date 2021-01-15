@@ -1,0 +1,235 @@
+#who-intro-section {
+  padding-bottom: 150px;
+  @media (min-width: 768px) {
+    padding-bottom: 210px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    @media (min-width: 992px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+#who-motto {
+  .shift-image {
+    margin-top: -150px;
+    @media (min-width: 768px) {
+      margin-top: -230px;
+    }
+  }
+  h1 {
+    @media (min-width: 768px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    @media (min-width: 992px) {
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+  p {
+    font-weight: 300;
+    margin-top: 15px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    @media (min-width: 992px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+#who-challenge {
+  h1 {
+    color: $yellow;
+    @media (min-width: 768px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    @media (min-width: 992px) {
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+  p {
+    margin-top: 15px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    @media (min-width: 992px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  .challenge-image-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 45px;
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+    .challenge-image-single {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .challenge-image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &.challenge-image-left {
+        flex: 0 0 47%;
+        margin-right: 3%;
+        .challenge-image {
+          display: block;
+          width: 100%;
+          padding-bottom: 100%;
+        }
+      }
+      &.challenge-image-right {
+        flex: 0 0 50%;
+        flex-wrap: wrap;
+        .challenge-image {
+          &:first-child {
+            flex: 0 0 100%;
+            padding-bottom: 100%;
+          }
+          &:nth-child(2n) {
+            flex: 0 0 80%;
+            padding-bottom: 80%;
+            margin-top: 6%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#who-values {
+  background-color: $yellow;
+  position: relative;
+  h1 {
+    color: $dark;
+    font-size: 36px;
+    line-height: 48px;
+    @media (min-width: 768px) {
+      font-size: 49px;
+      line-height: 59px;
+    }
+  }
+  .values-svg {
+    svg {
+      max-width: 100%;
+      height: auto;
+      margin-left: -35%;
+      display: block;
+      #rect1 .jarl {
+        animation: crazyRotate 3s infinite;
+      }
+    }
+  }
+  .value-single {
+    margin-top: 45px;
+    @media (min-width: 768px) {
+      margin-top: 85px;
+    }
+    &:first-child {
+      margin-top: 30px;
+      @media (min-width: 768px) {
+        margin-top: 55px;
+      }
+    }
+    &:nth-child(odd) {
+      @media (min-width: 768px) {
+        margin-left: -65px;
+      }
+    }
+    h2,
+    p {
+      color: $dark;
+    }
+    h2 {
+      font-weight: 700;
+      @media (min-width: 768px) {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      @media (min-width: 992px) {
+        font-size: 36px;
+        line-height: 43px;
+      }
+    }
+    p {
+      margin-top: 15px;
+      @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      @media (min-width: 992px) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+#who-clients,
+#who-partners {
+  h1 {
+    font-size: 28px;
+    line-height: 34px;
+    @media (min-width: 768px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    @media (min-width: 992px) {
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+  p {
+    margin-top: 15px;
+    font-weight: 300;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @media (min-width: 992px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .client-roster {
+    width: 90%;
+    margin: 45px auto 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 768px) {
+      margin: 85px auto 0;
+    }
+    img {
+      width: 35%;
+      margin: 20px 15px 0;
+      @media (min-width: 768px) {
+        width: 18%;
+        margin-top: 10px;
+      }
+      @media (min-width: 992px) {
+        width: 13%;
+        margin-top: 10px;
+      }
+    }
+  }
+}

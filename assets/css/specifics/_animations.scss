@@ -1,0 +1,85 @@
+@keyframes float {
+  10%,
+  90% {
+    transform: translate(7px, 15px);
+  }
+
+  20%,
+  80% {
+    transform: translate(-12px, 6px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate(-5px, -9px);
+  }
+  40%,
+  60% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes smallfloat {
+  10%,
+  90% {
+    transform: translate(3.5px, 7.5px);
+  }
+
+  20%,
+  80% {
+    transform: translate(-6px, 3px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate(-2.5px, -4.5px);
+  }
+  40%,
+  60% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes scrollMe {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -4px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@for $i from 0 through 14 {
+  $decimal: random(7) / 5;
+  .beetasvg-#{$i} {
+    animation-delay: #{$decimal}s !important;
+    animation: float #{(random(15) + 60) / 2}s infinite;
+  }
+}
+
+@keyframes shake {
+  90%,
+  100% {
+    transform: translateX(0);
+  }
+  91%,
+  99% {
+    transform: translateX(-1px);
+  }
+  92%,
+  98% {
+    transform: translateX(2px);
+  }
+  93%,
+  95%,
+  97% {
+    transform: translateX(-4px);
+  }
+  94%,
+  96% {
+    transform: translateX(4px);
+  }
+}

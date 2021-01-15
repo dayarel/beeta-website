@@ -1,0 +1,163 @@
+#jobdesc-wrapper {
+  &:not(#jedesc-content) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    li,
+    a,
+    span,
+    em {
+      color: $dark;
+    }
+  }
+  & + script + section {
+    display: none;
+  }
+  .svg-wrapper {
+    max-width: 50%;
+    margin: 0 auto 45px;
+    display: block;
+    @media (min-width: 768px) {
+      max-width: 100%;
+      margin: 0;
+    }
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  section {
+    p {
+      margin-top: 25px;
+    }
+    ul {
+      li {
+        position: relative;
+        padding-left: 20px;
+        line-height: 1.2;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        @media (min-width: 992px) {
+          font-size: 18px;
+        }
+        &:not(:first-child) {
+          margin-top: 15px;
+        }
+        &:before {
+          position: absolute;
+          background-color: $dark;
+          content: "";
+          display: block;
+          height: 5px;
+          left: 0;
+          overflow: hidden;
+          top: 8px;
+          transform: rotate(45deg);
+          width: 5px;
+        }
+      }
+    }
+  }
+  #jobdesc-header,
+  #jobdesc-benefits {
+    background-color: white;
+  }
+  #jobdesc-header {
+    img {
+      max-width: 50%;
+      margin: 0 auto 45px;
+      display: block;
+      @media (min-width: 768px) {
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+    .job-f {
+      margin-top: 45px;
+      p {
+        margin: 0;
+      }
+      .job-duration {
+        font-weight: 700;
+      }
+    }
+  }
+  #jobdesc-content {
+    background-color: $yellow;
+
+    .svg-wrapper {
+      @media (max-width: 767px) {
+        max-width: 30%;
+      }
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      margin-bottom: 35px;
+      position: relative;
+      padding-left: 60px;
+      &:before {
+        background-color: $dark;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 41px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .career-essential,
+    .career-desirable {
+      margin-top: 110px;
+    }
+  }
+  #jobdesc-footer {
+    p {
+      color: white;
+      a {
+        color: $yellow;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+  #jobdesc-back {
+    background-color: $yellow;
+    padding: 25px;
+    @media (min-width: 768px) {
+      padding: 38px;
+    }
+    a {
+      color: $dark;
+      font-size: 24px;
+      line-height: 32px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      text-align: center;
+      display: block;
+      &:before {
+        animation: back 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+        content: "\f060";
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-right: 10px;
+      }
+      @media (min-width: 768px) {
+        font-size: 36px;
+        line-height: 48px;
+      }
+      @media (min-width: 992px) {
+        font-size: 42px;
+        line-height: 56px;
+      }
+    }
+  }
+}

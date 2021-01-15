@@ -1,0 +1,264 @@
+// Variables
+
+$white: #fff;
+$awhite: #fafafa;
+$secondarybg: #f7f7f7;
+$mediumgray: #888888;
+$dark: #0b0b0b;
+$font: #343434;
+$yellow: #f8c200;
+$turquoise: #15c2bc;
+
+// General settings
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  background-color: $dark;
+
+  * {
+    color: $white;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 25px;
+  color: $mediumgray;
+}
+::-moz-placeholder {
+  font-size: 16px;
+  line-height: 25px;
+  color: $mediumgray;
+}
+:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 25px;
+  color: $mediumgray;
+}
+:-moz-placeholder {
+  font-size: 16px;
+  line-height: 25px;
+  color: $mediumgray;
+}
+
+section {
+  padding: 45px 0;
+  @media (min-width: 768px) {
+    padding: 70px 0;
+  }
+  &.white-bg {
+    background-color: #fafafa;
+    h1,
+    p,
+    a {
+      color: $font;
+    }
+  }
+  &.first-section {
+    margin-top: 77px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+
+  &.semi {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  &.section-title {
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
+p,
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: 992px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.crounded-wrapper {
+  text-align: center;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.crounded {
+      border-radius: 33px;
+      padding: 17px 45px;
+      text-align: center;
+      display: inline-block;
+      margin: 0 auto;
+      font-size: 20px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      max-width: 100%;
+    }
+
+    &.crounded-black {
+      color: $dark;
+      border: 1px solid $dark;
+    }
+
+    &.crounded-white {
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+
+.fw-image,
+.hw-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fw-image {
+  padding-bottom: 60%;
+}
+
+.hw-image {
+  padding-bottom: 75%;
+}
+
+@keyframes header {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+.front-sidebar {
+  a {
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: center center;
+    position: fixed;
+    height: 25px;
+    left: -40px;
+    top: 50%;
+    bottom: 0;
+    color: $yellow;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 48px;
+    z-index: 99999999;
+  }
+}
+
+.custom-slick {
+  opacity: 0;
+}
+
+.slick-dots {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  margin-top: 15px;
+  li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 15px;
+      height: 15px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: $dark;
+      border-radius: 50%;
+      &:hover,
+      &:focus {
+        outline: none;
+        &:before {
+          opacity: 1;
+        }
+      }
+      &:before {
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: "";
+        text-align: center;
+        opacity: 0.25;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+    &.slick-active {
+      button {
+        background-color: $yellow;
+        &:before {
+          opacity: 0.75;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+// section#front-clients .slick-track {
+//   width: auto !important;
+// }
